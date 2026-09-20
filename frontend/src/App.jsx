@@ -26,7 +26,7 @@ function App() {
   const [feedback, setFeedback] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5001/api/grants")
+    fetch("/api/grants")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Could not load grants.");
